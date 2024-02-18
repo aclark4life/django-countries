@@ -181,8 +181,8 @@ class Country:
         return self.countries.ioc_code(self.code)
 
     def __getattr__(self, attr):
-        if attr in EXTENSIONS:
-            return EXTENSIONS[attr](self)
+        # if attr in EXTENSIONS:
+        #     return EXTENSIONS[attr](self)
         raise AttributeError()
 
 
